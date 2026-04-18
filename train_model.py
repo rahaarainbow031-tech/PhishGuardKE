@@ -101,7 +101,6 @@ print(classification_report(y_test, y_predictions,
 # f1-score  = balance between precision and recall (higher = better)
 
 
-# --- STEP 6: SAVE THE MODEL ---
 # joblib.dump() saves the trained model to a file
 # Now your Streamlit app can load this file instead of retraining every time
 model_dir = Path("model")
@@ -112,7 +111,7 @@ print("\nDone! You can now run the Streamlit app.")
 
 
 # --- BONUS: QUICK MANUAL TEST ---
-# Let's manually test a few messages so you can SEE it working
+
 print("\n--- Manual tests ---")
 test_messages = [
     "Confirmed. KES 500 sent to John 0712XXXXXX. Balance: KES 2000.",
